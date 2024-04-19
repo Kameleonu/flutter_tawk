@@ -83,7 +83,8 @@ class _TawkState extends State<Tawk> {
           NavigationDelegate(
             onNavigationRequest: (NavigationRequest request) {
               if (request.url == 'about:blank' ||
-                  request.url.contains('tawk.to')) {
+                  request.url.contains('tawk.to') ||
+                  request.url.contains('tawk.help')) {
                 return NavigationDecision.navigate;
               }
 
